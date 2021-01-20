@@ -21,6 +21,12 @@ class VideosController < ApplicationController
       )
   end
 
+  def add_to_library
+    # if param[:title]
+    #   data = vi
+    # end
+  end
+
   private
 
   def require_video
