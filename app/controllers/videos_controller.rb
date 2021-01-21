@@ -21,51 +21,6 @@ class VideosController < ApplicationController
       )
   end
 
-  #FRONT-END:
-  # find the movie by external id
-  # submit/add to library
-  # in App: api.post 
-  # create a video by finding movie by external id?
-  # if that doesn't exist, save to library
-  # else render a message that it already exists
-
-  # def create
-  #   movie = Video.new(require_video)
-  #
-  #   if movie.save
-  #     render json: video.as_json(only: [:title]), status: :created
-  #     # add to library?
-  #     return
-  #   else
-  #     render json: {
-  #         errors: video.errors.messages
-  #     }, status: :bad_request
-  #     return
-  #   end
-  # end
-
-  def add_to_library
-    # find movie_id
-    # data = VideoWrapper.construct_video(params[:external_id])
-    #
-    #
-    # if data.nil?
-    #   render not_found message
-    # else
-    #
-    #
-    # if we found the movie_id
-    #   check to see if it exits
-    #   if not, add to library
-    # else
-    #   display message
-    # end
-    #
-    # if param[:title]
-    #   data = vi
-    # end
-  end
-
   def create
     @video = Video.new(video_params)
 
